@@ -1,0 +1,253 @@
+body {
+  height: 1500px;
+  background: url(https://www.brainpickings.org/wp-content/themes/brainpickings/images/bckgd_body.png);
+}
+
+.offset {
+  margin-top: 0;
+  padding-top: 270px;
+  text-align: center;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: 250px;
+  font-weight: bold;
+  text-align: center;
+  background: gold;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+.header.small {
+  height: 70px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.header.small ~ .offset {
+  padding-top: 140px;
+}
+.header.small .header_logo {
+  padding-top: 20px;
+  font-size: 20px;
+  text-shadow: none;
+}
+
+.header_logo {
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+  padding-top: 80px;
+  font-size: 50px;
+  text-shadow: 3px 4px rgba(0, 0, 0, 0.1);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+
+
+
+
+
+
+
+/* hamburger */
+
+*  {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menuItem {
+  display: block;
+  margin: 2rem 4rem;
+  font-size: 1.8rem;
+  color: white;
+  text-decoration: none;
+}
+
+.menuItem:hover {
+  text-decoration: underline;
+}
+
+.hamburger {
+  position: absolute;
+  z-index: 100;
+  top: 1rem;
+  right: 1rem;
+  padding: 4px;
+  border: black solid 1px;
+  background: white;
+  cursor: pointer;
+}
+
+.closeIcon {
+  display: none;
+}
+
+.menu {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: black;
+  color: white;
+  list-style: none;
+  padding-top: 4rem;
+}
+
+.showMenu {
+  transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+body  {
+        
+  max-width: max-content;
+  font-family: Arial;
+  margin: 0;
+
+  background-image: url(BG.jpg);
+background-size:cover;
+      -webkit-animation: slidein 100s;
+      animation: slidein 100s;
+
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+
+      -webkit-animation-direction: alternate;
+      animation-direction: alternate;              
+}
+
+@-webkit-keyframes slidein {
+from {background-position: top; background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+}
+
+@keyframes slidein {
+from {background-position: top;background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
